@@ -55,12 +55,15 @@ export enum CharacterClass {
     Ark = "Ark",
     Hayato = "Hayato",
     Kanna = "Kanna",
-    Len = "Len"
+    Len = "Len",
+    MoXuan = "MoXuan",
+    Lynn = "Lynn"
 }
 
 export enum MapleServer {
     KMS = 'KMS',
-    SEA = 'SEA'
+    SEA = 'SEA',
+    TMS = 'TMS'
 }
 
 export enum SymbolRegion {
