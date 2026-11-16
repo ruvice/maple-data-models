@@ -52,7 +52,8 @@ export const CharacterClassLocalisationSEA: Record<CharacterClass, string> = {
     [CharacterClass.Kanna]: "Kanna",
     [CharacterClass.Len]: "Len",
     [CharacterClass.MoXuan]: "Mo Xuan",
-    [CharacterClass.Lynn]: "Lynn"
+    [CharacterClass.Lynn]: "Lynn",
+    [CharacterClass.Lethe]: "Lethe"
 };
 
 export const CharacterClassLocalisationKMS: Record<CharacterClass, string> = {
@@ -106,7 +107,8 @@ export const CharacterClassLocalisationKMS: Record<CharacterClass, string> = {
     [CharacterClass.Kanna]: "칸나",
     [CharacterClass.Len]: "렌",
     [CharacterClass.Lynn]: "린",
-    [CharacterClass.MoXuan]: "묵현"
+    [CharacterClass.MoXuan]: "묵현",
+    [CharacterClass.Lethe]: "레테"
 };
 
 export const CharacterClassLocalisationTMS: Record<CharacterClass, string> = {
@@ -160,7 +162,8 @@ export const CharacterClassLocalisationTMS: Record<CharacterClass, string> = {
     [CharacterClass.SoulMaster]: "聖魂劍士",
     [CharacterClass.Zero]: "神之子",
     [CharacterClass.Evan]: "龍魔導士",
-    [CharacterClass.CannonMaster]: "重砲指揮官"
+    [CharacterClass.CannonMaster]: "重砲指揮官",
+    [CharacterClass.Lethe]: "蕾媞"
 }
 
 export const ITEM_EQUIP_STAT_OPTIONS_SEA: Record<ItemEquipOption, string> = {

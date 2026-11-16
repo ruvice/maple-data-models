@@ -164,7 +164,8 @@ export const CharacterClassMappingSEA: Record<string, CharacterClass> = {
     "Kanna": CharacterClass.Kanna,
     "Len": CharacterClass.Len,
     "Mo Xuan": CharacterClass.MoXuan,
-    "Lynn": CharacterClass.Lynn
+    "Lynn": CharacterClass.Lynn,
+    "Lethe": CharacterClass.Lethe
 };
 
 export const CharacterClassMappingKMS: Record<string, CharacterClass> = {
@@ -218,7 +219,8 @@ export const CharacterClassMappingKMS: Record<string, CharacterClass> = {
     "묵현": CharacterClass.MoXuan,
     "린": CharacterClass.Lynn,
     "칸나": CharacterClass.Kanna,
-    "하야토": CharacterClass.Hayato
+    "하야토": CharacterClass.Hayato,
+    "레테": CharacterClass.Lethe
 };
 
 export const CharacterClassMappingTMS: Record<string, CharacterClass> = {
@@ -272,7 +274,8 @@ export const CharacterClassMappingTMS: Record<string, CharacterClass> = {
     "神之子": CharacterClass.Zero,
     "龍魔導士": CharacterClass.Evan,
     "聖魂劍士": CharacterClass.SoulMaster,
-    "重砲指揮官": CharacterClass.CannonMaster, 
+    "重砲指揮官": CharacterClass.CannonMaster,
+    "蕾媞": CharacterClass.Lethe,
 };
 
 export const StatMappingSEA: Record<string, StatName> = {
