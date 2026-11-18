@@ -55,13 +55,48 @@ export const ItemEquipmentSlotMappingKMS: Record<string, ItemEquipmentSlot> = {
     "눈장식": ItemEquipmentSlot.EyeAccessory
 };
 
+
+export const ItemEquipmentSlotMappingTMS: Record<string, ItemEquipmentSlot> = {
+  // Standard equips
+  "帽子": ItemEquipmentSlot.Hat,
+  "上衣": ItemEquipmentSlot.Top,
+  "褲/裙": ItemEquipmentSlot.Bottom,
+  "鞋子": ItemEquipmentSlot.Shoes,
+  "手套": ItemEquipmentSlot.Glove,
+  "披風": ItemEquipmentSlot.Cape,
+
+  "耳環": ItemEquipmentSlot.Earring,
+  "腰帶": ItemEquipmentSlot.Belt,
+  "墜飾": ItemEquipmentSlot.Pendant,
+  "墜飾2": ItemEquipmentSlot.Pendant2,
+  "肩膀裝飾": ItemEquipmentSlot.ShoulderDecoration,
+  "臉飾": ItemEquipmentSlot.FaceAccessory,
+  "眼飾": ItemEquipmentSlot.EyeAccessory,
+
+  "武器": ItemEquipmentSlot.Weapon,
+  "輔助武器": ItemEquipmentSlot.SecondaryWeapons,
+
+  // Emblem vs Badge (TMS commonly uses these two distinct labels)
+  "徽章": ItemEquipmentSlot.Emblem,
+  "胸章": ItemEquipmentSlot.Badge,
+
+  "勳章": ItemEquipmentSlot.Medal,
+  "口袋道具": ItemEquipmentSlot.PocketItem,
+  "機器心臟": ItemEquipmentSlot.MechanicalHeart,
+
+  // Rings
+  "戒指1": ItemEquipmentSlot.Ring1,
+  "戒指2": ItemEquipmentSlot.Ring2,
+  "戒指3": ItemEquipmentSlot.Ring3,
+  "戒指4": ItemEquipmentSlot.Ring4,
+};
+
 export const PotentialMappingSEA: Record<string, Potential> = {
     "Rare": Potential.Rare,
     "Epic": Potential.Epic,
     "Unique": Potential.Unique,
     "Legendary": Potential.Legendary
 }
-
 
 export const PotentialMappingKMS: Record<string, Potential> = {
     "레어": Potential.Rare,
@@ -70,6 +105,13 @@ export const PotentialMappingKMS: Record<string, Potential> = {
     "레전드리": Potential.Legendary
 }
 
+export const PotentialMappingTMS: Record<string, Potential> = {
+    // MapleStoryTW commonly: 特殊 -> 稀有 -> 罕見 -> 傳說
+    "特殊": Potential.Rare,
+    "稀有": Potential.Epic,
+    "罕見": Potential.Unique,
+    "傳說": Potential.Legendary,
+};
 
 export const CharacterClassMappingSEA: Record<string, CharacterClass> = {
     "Hero": CharacterClass.Hero,
@@ -120,7 +162,10 @@ export const CharacterClassMappingSEA: Record<string, CharacterClass> = {
     "Ark": CharacterClass.Ark,
     "Hayato": CharacterClass.Hayato,
     "Kanna": CharacterClass.Kanna,
-    "Len": CharacterClass.Len
+    "Len": CharacterClass.Len,
+    "Mo Xuan": CharacterClass.MoXuan,
+    "Lynn": CharacterClass.Lynn,
+    "Lethe": CharacterClass.Lethe
 };
 
 export const CharacterClassMappingKMS: Record<string, CharacterClass> = {
@@ -170,7 +215,67 @@ export const CharacterClassMappingKMS: Record<string, CharacterClass> = {
     "바이퍼": CharacterClass.Viper,
     "캡틴": CharacterClass.Captain,
     "캐논슈터": CharacterClass.CannonMaster,
-    "렌": CharacterClass.Len
+    "렌": CharacterClass.Len,
+    "묵현": CharacterClass.MoXuan,
+    "린": CharacterClass.Lynn,
+    "칸나": CharacterClass.Kanna,
+    "하야토": CharacterClass.Hayato,
+    "레테": CharacterClass.Lethe
+};
+
+export const CharacterClassMappingTMS: Record<string, CharacterClass> = {
+    "主教": CharacterClass.Bishop,
+    "亞克": CharacterClass.Ark,
+    "伊利恩": CharacterClass.Illium,
+    "傑諾": CharacterClass.Xenon,
+    "凱內西斯": CharacterClass.Kinesis,
+    "凱撒": CharacterClass.Kaiser,
+    "凱殷": CharacterClass.Kaine,
+    "劍豪": CharacterClass.Hayato,
+    "卡莉": CharacterClass.Khali,
+    "卡蒂娜": CharacterClass.Cadena,
+    "夜使者": CharacterClass.NightLord,
+    "夜光": CharacterClass.Luminous,
+    "大魔導士(冰、雷)": CharacterClass.ArchMageIL,
+    "大魔導士(火、毒)": CharacterClass.ArchMageFP,
+    "天使破壞者": CharacterClass.AngelicBuster,
+    "影武者": CharacterClass.BladeMaster,
+    "惡魔復仇者": CharacterClass.DemonAvenger,
+    "惡魔殺手": CharacterClass.DemonSlayer,
+    "烈焰巫師": CharacterClass.FlameWizard,
+    "狂狼勇士": CharacterClass.Aran,
+    "爆破者": CharacterClass.Blaster,
+    "煉獄巫師": CharacterClass.BattleMage,
+    "暗影神偷": CharacterClass.Shadower,
+    "神射手": CharacterClass.CrossbowMaster,
+    "精靈遊俠": CharacterClass.Mercedes,
+    "聖騎士": CharacterClass.Paladin,
+    "開拓者": CharacterClass.Pathfinder,
+    "陰陽師": CharacterClass.Kanna,
+    "英雄": CharacterClass.Hero,
+    "虎影": CharacterClass.HoYoung,
+    "墨玄": CharacterClass.MoXuan,
+    "槍神": CharacterClass.Captain,
+    "機甲戰神": CharacterClass.Mechanic,
+    "米哈逸": CharacterClass.Mihile,
+    "菈菈": CharacterClass.Lara,
+    "蓮": CharacterClass.Len,
+    "阿戴爾": CharacterClass.Adele,
+    "破風使者": CharacterClass.WindBreaker,
+    "暗夜行者": CharacterClass.NightWalker,
+    "狂豹獵人": CharacterClass.WildHunter,
+    "閃雷悍將": CharacterClass.Striker,
+    "幻影俠盜": CharacterClass.Phantom,
+    "黑騎士": CharacterClass.DarkKnight,
+    "拳霸": CharacterClass.Viper,
+    "箭神": CharacterClass.Bowmaster,
+    "琳恩": CharacterClass.Lynn,
+    "隱月": CharacterClass.Eunwol,
+    "神之子": CharacterClass.Zero,
+    "龍魔導士": CharacterClass.Evan,
+    "聖魂劍士": CharacterClass.SoulMaster,
+    "重砲指揮官": CharacterClass.CannonMaster,
+    "蕾媞": CharacterClass.Lethe,
 };
 
 export const StatMappingSEA: Record<string, StatName> = {
@@ -252,6 +357,68 @@ export const StatMappingKMS: Record<string, StatName> = {
     "전투력": StatName.CombatPower,
     "소환수 지속시간 증가": StatName.SummonDurationIncrease
 };
+
+export const StatMappingTMS: Record<string, StatName> = {
+  // Attack range / “stat attack”
+  "最低屬性攻擊力": StatName.MinimumAttStat,
+  "最高屬性攻擊力": StatName.MaximumAttStat,
+
+  // Damage
+  "傷害": StatName.Damage,
+  "BOSS怪物傷害": StatName.BossMonsterDamage,
+  "最終傷害": StatName.FinalDamage,
+
+  // Ignore / crit
+  "無視防禦率": StatName.IgnoreDef,
+  "爆擊機率": StatName.CriticalRate,
+  "爆擊傷害": StatName.CriticalDamage,
+
+  // Defensive / misc
+  "狀態異常耐性": StatName.StatusResistance,
+  "格擋": StatName.Stance,         // TW label corresponds to “stance”
+  "防禦力": StatName.Def,
+  "移動速度": StatName.Speed,
+  "跳躍力": StatName.Jump,
+
+  // Forces
+  "星力": StatName.Starforce,
+  "神秘力量": StatName.ArcaneForce,
+  "真實之力": StatName.AuthenticForce,
+
+  // Primary stats
+  "STR": StatName.Str,
+  "DEX": StatName.Dex,
+  "INT": StatName.Int,
+  "LUK": StatName.Luk,
+  "HP": StatName.Hp,
+  "MP": StatName.Mp,
+
+  // Drop / meso / buffs
+  "道具掉落率": StatName.ItemDropRate,
+  "楓幣獲得量": StatName.MesoObtained,
+  "Buff持續時間": StatName.BuffDuration,
+
+  // Speed / cooldown / special
+  "攻擊速度": StatName.AttackSpeed,
+  "一般怪物傷害": StatName.NormalMonsterDamage,
+  "冷卻時間減少(秒)": StatName.CooldownReductionSec,
+  "冷卻時間減少(％)": StatName.CooldownReductionPercent,
+  "未套用冷卻時間": StatName.UnaffectedByCooldown,
+  "無視屬性耐性": StatName.IgnoreElementalResistance,
+  "狀態異常追加傷害": StatName.AbnormalStatusAdditionalDamage,
+
+  // EXP
+  "獲得額外經驗值": StatName.AdditionalExpObtained,
+
+  // Attack / power
+  "攻擊力": StatName.Att,
+  "魔法攻擊力": StatName.MAtt,
+  "戰鬥力": StatName.CombatPower,
+
+  // Summons
+  "召喚獸持續時間增加": StatName.SummonDurationIncrease,
+};
+
 
 export function toMapleServer(input: string): MapleServer | undefined {
     return Object.values(MapleServer).includes(input as MapleServer)

@@ -57,11 +57,15 @@ export var CharacterClass;
     CharacterClass["Hayato"] = "Hayato";
     CharacterClass["Kanna"] = "Kanna";
     CharacterClass["Len"] = "Len";
+    CharacterClass["MoXuan"] = "MoXuan";
+    CharacterClass["Lynn"] = "Lynn";
+    CharacterClass["Lethe"] = "Lethe";
 })(CharacterClass || (CharacterClass = {}));
 export var MapleServer;
 (function (MapleServer) {
     MapleServer["KMS"] = "KMS";
     MapleServer["SEA"] = "SEA";
+    MapleServer["TMS"] = "TMS";
 })(MapleServer || (MapleServer = {}));
 export var SymbolRegion;
 (function (SymbolRegion) {
