@@ -1,25 +1,16 @@
-# 📦 Publishing Guide
+# maple-data-models
 
-This document explains the simple workflow for releasing new versions of this npm package.
+Typed data models for MapleStory / MapleStorySEA APIs — reusable across web apps, edge functions, and scripts.
 
----
-
-## 🚀 Releasing a New Version
-
-Follow these steps whenever you want to publish an update to npm.
+> Keep your domain entities and response shapes in one place so the UI and backend stay in sync.
 
 ---
 
-## ✅ 1. Build the package
-
-If the project uses TypeScript or outputs compiled files to `dist/`, you must build before publishing:
+## Installation
 
 ```bash
-npm run build
+# If you publish unscoped:
+npm i maple-data-models
 
-npm version patch    # 1.0.0 → 1.0.1
-npm version minor    # 1.0.0 → 1.1.0
-npm version major    # 1.0.0 → 2.0.0
-
-npm publish --access public
-npm publish
+# If you publish under your scope (recommended):
+npm i @ruvice/maple-data-models
